@@ -1,0 +1,12 @@
+2016-06-13 10:57:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PLAYER" not found; SQL statement:
+UPDATE player SET is_alive = FALSE WHERE id = 1 [42102-192]
+2016-06-13 11:04:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PLAYERS" already exists; SQL statement:
+CREATE TABLE players(id IDENTITY, name VARCHAR, is_alive BOOLEAN, score INT, health DOUBLE) [42101-192]
+2016-06-13 11:09:36 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "SELECT * PLAYERS[*] "; SQL statement:
+SELECT * players [42000-192]
+2016-06-13 11:13:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDATE PLAYERS SET IS_ALIVE = FALSE WHERE NAME = 'Alice')[*] "; SQL statement:
+UPDATE players SET is_alive = FALSE WHERE name = 'Alice') [42000-192]
